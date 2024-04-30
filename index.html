@@ -4,24 +4,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- título -->
+  <!-- título -->
   <title>Document</title>
 
-<!-- fontes -->
+  <!-- fontes -->
 
-<!-- icones -->
-  
-<!-- css -->
+  <!-- icones -->
+
+  <!-- css -->
   <link rel="stylesheet" href="./src/styles/reset.css">
   <link rel="stylesheet" href="./src/styles/main.css">
 
 </head>
 
 <!-- projeto -->
-<body>
-  
 
-<!-- js/engine -->
+<body>
+  <h2>Calculadora de Nível de Ranqueada</h2>
+
+  <p>Insira a quantidade de vitórias e derrotas do jogador:</p>
+
+  <label for="vitorias">Vitórias:</label>
+  <input type="number" id="vitorias"/>
+  <br/><br/>
+
+  <label for="derrotas">Derrotas:</label>
+  <input type="number" id="derrotas"/>
+  <br/><br/>
+
+  <button onclick="calcularNivel()">Calcular</button>
+
+  <p id="resultado"></p>
+
+  <!-- js/engine -->
   <script src="./src/scripts/engine.js" defer></script>
 </body>
 
